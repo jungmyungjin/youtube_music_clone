@@ -47,4 +47,5 @@ main .track_img img {
 .track_name {
   display: flex;
   flex-direction: column;
+  padding: 10px 0px;
 }
