@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Youtube Music</title>
+    <title>Youtube Music(clone)</title>
     <link rel="stylesheet" href="./css/style.css" />
     <script
       src="https://kit.fontawesome.com/4e348215a7.js"
@@ -12,108 +12,283 @@
   </head>
   <body>
     <header>
-      <div class="logo">
+      <div class="header__logo">
         <img src="./image/logo.svg" alt="" />
       </div>
-      <menu>
-        <div class="main">
+      <div class="header__menu">
+        <div class="menu__home">
           <i class="fas fa-home fa-1x"></i>
         </div>
-        <div class="hot_list">
+        <div class="menu__hotlist">
           <i class="fas fa-fire fa-1x"></i>
         </div>
-        <div class="songs">
+        <div class="menu__song">
           <i class="fas fa-compact-disc fa-1x"></i>
         </div>
-        <div class="search">
+        <div class="menu__search">
           <i class="fas fa-search fa-1x"></i>
         </div>
-      </menu>
-      <div class="profile"></div>
+      </div>
+      <div class="header__profile">
+        <img class="img" src="./image/album_sample.jpg" alt="" />
+      </div>
     </header>
     <main>
-      <div class="Thematic_track">
-        <div class="theme">
-          <span>즐겨 듣는 음악</span>
+      <div class="theme">
+        <div class="theme__title">
+          <span>오늘의 핫리스트</span>
         </div>
-        <div class="track_list">
-          <div class="track">
-            <div class="track_img">
-              <img src="./image/album_sample.jpg" alt="" />
-            </div>
-            <div class="track_name">
-              <span class="name">
-                국내 R&B 핫리스트
-              </span>
-              <span class="play_list">
-                <span>
-                  재생목록 • Youtube Music
+        <div class="theme__tracks">
+          <div class="track-lists">
+            <div class="track">
+              <div class="track__thumbnail">
+                <div class="thumbnail__image"></div>
+                <div class="thumbnail__effect">
+                  <div class="thumbnail__effect__menu">
+                    <i class="fas fa-ellipsis-v"></i>
+                  </div>
+                  <div class="thumbnail__effect__play">
+                    <i class="fas fa-play-circle fa-3x"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="track__info">
+                <span class="track-name">
+                  국내 가요 핫리스트
                 </span>
-              </span>
+                <span class="track-description">
+                  재생목록 • YouTube Music
+                </span>
+              </div>
+            </div>
+            <!-- <button class="btn left-btn" type="button">
+              <i class="fas fa-chevron-left"></i>
+            </button>
+            <button class="btn right-btn" type="button">
+              <i class="fas fa-chevron-right"></i>
+            </button> -->
+
+            <!-- 복사 -->
+            <div class="track">
+              <div class="track__thumbnail">
+                <div class="thumbnail__image"></div>
+                <div class="thumbnail__effect">
+                  <div class="thumbnail__effect__menu">
+                    <i class="fas fa-ellipsis-v"></i>
+                  </div>
+                  <div class="thumbnail__effect__play">
+                    <i class="fas fa-play-circle fa-3x"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="track__info">
+                <span class="track-name">
+                  국내 가요 핫리스트
+                </span>
+                <span class="track-description">
+                  재생목록 • YouTube Music
+                </span>
+              </div>
+            </div>
+            <div class="track">
+              <div class="track__thumbnail">
+                <div class="thumbnail__image"></div>
+                <div class="thumbnail__effect">
+                  <div class="thumbnail__effect__menu">
+                    <i class="fas fa-ellipsis-v"></i>
+                  </div>
+                  <div class="thumbnail__effect__play">
+                    <i class="fas fa-play-circle fa-3x"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="track__info">
+                <span class="track-name">
+                  국내 가요 핫리스트
+                </span>
+                <span class="track-description">
+                  재생목록 • YouTube Music
+                </span>
+              </div>
+            </div>
+            <div class="track">
+              <div class="track__thumbnail">
+                <div class="thumbnail__image"></div>
+                <div class="thumbnail__effect">
+                  <div class="thumbnail__effect__menu">
+                    <i class="fas fa-ellipsis-v"></i>
+                  </div>
+                  <div class="thumbnail__effect__play">
+                    <i class="fas fa-play-circle fa-3x"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="track__info">
+                <span class="track-name">
+                  국내 가요 핫리스트
+                </span>
+                <span class="track-description">
+                  재생목록 • YouTube Music
+                </span>
+              </div>
+            </div>
+            <div class="track">
+              <div class="track__thumbnail">
+                <div class="thumbnail__image"></div>
+                <div class="thumbnail__effect">
+                  <div class="thumbnail__effect__menu">
+                    <i class="fas fa-ellipsis-v"></i>
+                  </div>
+                  <div class="thumbnail__effect__play">
+                    <i class="fas fa-play-circle fa-3x"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="track__info">
+                <span class="track-name">
+                  국내 가요 핫리스트
+                </span>
+                <span class="track-description">
+                  재생목록 • YouTube Music
+                </span>
+              </div>
+            </div>
+            <div class="track">
+              <div class="track__thumbnail">
+                <div class="thumbnail__image"></div>
+                <div class="thumbnail__effect">
+                  <div class="thumbnail__effect__menu">
+                    <i class="fas fa-ellipsis-v"></i>
+                  </div>
+                  <div class="thumbnail__effect__play">
+                    <i class="fas fa-play-circle fa-3x"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="track__info">
+                <span class="track-name">
+                  국내 가요 핫리스트
+                </span>
+                <span class="track-description">
+                  재생목록 • YouTube Music
+                </span>
+              </div>
+            </div>
+            <div class="track">
+              <div class="track__thumbnail">
+                <div class="thumbnail__image"></div>
+                <div class="thumbnail__effect">
+                  <div class="thumbnail__effect__menu">
+                    <i class="fas fa-ellipsis-v"></i>
+                  </div>
+                  <div class="thumbnail__effect__play">
+                    <i class="fas fa-play-circle fa-3x"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="track__info">
+                <span class="track-name">
+                  국내 가요 핫리스트
+                </span>
+                <span class="track-description">
+                  재생목록 • YouTube Music
+                </span>
+              </div>
+            </div>
+            <div class="track">
+              <div class="track__thumbnail">
+                <div class="thumbnail__image"></div>
+                <div class="thumbnail__effect">
+                  <div class="thumbnail__effect__menu">
+                    <i class="fas fa-ellipsis-v"></i>
+                  </div>
+                  <div class="thumbnail__effect__play">
+                    <i class="fas fa-play-circle fa-3x"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="track__info">
+                <span class="track-name">
+                  국내 가요 핫리스트
+                </span>
+                <span class="track-description">
+                  재생목록 • YouTube Music
+                </span>
+              </div>
+            </div>
+            <div class="track">
+              <div class="track__thumbnail">
+                <div class="thumbnail__image"></div>
+                <div class="thumbnail__effect">
+                  <div class="thumbnail__effect__menu">
+                    <i class="fas fa-ellipsis-v"></i>
+                  </div>
+                  <div class="thumbnail__effect__play">
+                    <i class="fas fa-play-circle fa-3x"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="track__info">
+                <span class="track-name">
+                  국내 가요 핫리스트
+                </span>
+                <span class="track-description">
+                  재생목록 • YouTube Music
+                </span>
+              </div>
+            </div>
+            <div class="track">
+              <div class="track__thumbnail">
+                <div class="thumbnail__image"></div>
+                <div class="thumbnail__effect">
+                  <div class="thumbnail__effect__menu">
+                    <i class="fas fa-ellipsis-v"></i>
+                  </div>
+                  <div class="thumbnail__effect__play">
+                    <i class="fas fa-play-circle fa-3x"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="track__info">
+                <span class="track-name">
+                  국내 가요 핫리스트
+                </span>
+                <span class="track-description">
+                  재생목록 • YouTube Music
+                </span>
+              </div>
+            </div>
+            <div class="track">
+              <div class="track__thumbnail">
+                <div class="thumbnail__image"></div>
+                <div class="thumbnail__effect">
+                  <div class="thumbnail__effect__menu">
+                    <i class="fas fa-ellipsis-v"></i>
+                  </div>
+                  <div class="thumbnail__effect__play">
+                    <i class="fas fa-play-circle fa-3x"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="track__info">
+                <span class="track-name">
+                  국내 가요 핫리스트
+                </span>
+                <span class="track-description">
+                  재생목록 • YouTube Music
+                </span>
+              </div>
             </div>
           </div>
-          <div class="track">
-            <div class="track_img">
-              <img src="./image/album_sample.jpg" alt="" />
-            </div>
-            <div class="track_name">
-              <span class="name">
-                국내 R&B 핫리스트
-              </span>
-              <span class="play_list">
-                <span>
-                  재생목록 • Youtube Music
-                </span>
-              </span>
-            </div>
-          </div>
-          <div class="track">
-            <div class="track_img">
-              <img src="./image/album_sample.jpg" alt="" />
-            </div>
-            <div class="track_name">
-              <span class="name">
-                국내 R&B 핫리스트
-              </span>
-              <span class="play_list">
-                <span>
-                  재생목록 • Youtube Music
-                </span>
-              </span>
-            </div>
-          </div>
-          <div class="track">
-            <div class="track_img">
-              <img src="./image/album_sample.jpg" alt="" />
-            </div>
-            <div class="track_name">
-              <span class="name">
-                국내 R&B 핫리스트
-              </span>
-              <span class="play_list">
-                <span>
-                  재생목록 • Youtube Music
-                </span>
-              </span>
-            </div>
-          </div>
-          <!-- <div class="track">
-            <div class="track_img">
-              <img src="./image/album_sample.jpg" alt="" />
-            </div>
-            <div class="track_name">
-              <span class="name">
-                국내 R&B 핫리스트
-              </span>
-              <span class="play_list">
-                <span>
-                  재생목록 • Youtube Music
-                </span>
-              </span>
-            </div>
-          </div> -->
         </div>
+        <button class="btn left-btn" type="button">
+          <i class="fas fa-chevron-left"></i>
+        </button>
+        <button class="btn right-btn" type="button">
+          <i class="fas fa-chevron-right"></i>
+        </button>
       </div>
     </main>
+    <script src="index.js"></script>
   </body>
 </html>

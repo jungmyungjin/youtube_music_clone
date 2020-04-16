@@ -1,51 +1,161 @@
-/* 폰트 */
+/*가운데 정렬*/
+/* .thumbnail__effect__menu > i,
+.thumbnail__effect__play > i {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+} */
 
-main .theme {
-  color: white;
-  font-weight: 600;
-  font-size: 25px;
-}
-
-main .track_name {
-  color: white;
-  font-size: 14px;
-}
-
-main .play_list {
-  color: gray;
-  font-size: 14px;
-}
-
-main .track_img img {
-  height: 180px;
-  width: 180px;
-  border-radius: 10px;
-}
-
-.Thematic_track {
-  width: 100%;
-  height: 300px;
-  padding: 10px 50px;
+/*  테마 타이틀 --------------------------- */
+.theme {
+  /* margin-top: 10px; */
+  height: 330px;
+  width: auto;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  /* background-color: yellow; */
 }
 
-.track_list {
+.theme__title {
+  height: 60px;
+  width: 100%;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
   align-items: center;
 }
 
-.track {
-  padding-right: 15px;
-  ;
+.theme__title > span {
+  font-size: 23px;
+  font-weight: 800;
+  margin-left: 50px;
 }
 
-.track_name {
+/* --------------------------------------------------------------- */
+
+.theme__tracks {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.theme .btn {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  top: 210px;
+  cursor: pointer;
+  border: 0;
+}
+
+.theme .left-btn {
+  left: 20px;
+}
+.theme .right-btn {
+  right: 20px;
+}
+
+.theme__tracks > .track-lists {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: auto;
+  width: 800px;
+  height: 100%;
+  margin: 0px 35px;
+
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+.track {
+  padding: 5px;
+  margin: 10px;
   display: flex;
   flex-direction: column;
-  padding: 10px 0px;
+  height: 90%;
+  width: 200px;
+}
+
+.track .track__thumbnail {
+  height: 170px;
+  width: 170px;
+  border-radius: 3%;
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+}
+
+.track__thumbnail .thumbnail__image,
+.track__thumbnail .thumbnail__effect {
+  position: absolute;
+  height: 170px;
+  width: 170px;
+  border-radius: 3%;
+}
+.track__thumbnail .thumbnail__image {
+  background-image: url("../image/gradation.jpg");
+  background-size: contain;
+}
+.track__thumbnail .thumbnail__effect {
+  background: linear-gradient(
+    180deg,
+    rgba(50, 50, 50, 0.8),
+    rgba(255, 255, 255, 0.2)
+  );
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 20px;
+}
+
+@keyframes play_btn {
+  from {
+  }
+  to {
+    color: white;
+    transform: scale(1.15);
+  }
+}
+.thumbnail__effect__menu {
+  cursor: pointer;
+}
+.thumbnail__effect__play {
+  cursor: pointer;
+  color: rgba(255, 255, 255, 0.7);
+}
+.thumbnail__effect__play:hover {
+  animation: play_btn 0.2s ease-in-out forwards;
+}
+
+@keyframes show_effect {
+  from {
+  }
+  to {
+    opacity: 1;
+  }
+}
+.thumbnail__effect {
+  opacity: 0;
+}
+.thumbnail__effect:hover {
+  animation: show_effect 0.2s ease-in-out forwards;
+}
+
+.track__info {
+  margin: 10px 0px;
+}
+
+.track__info > span {
+  display: block;
+}
+.track__info > .track-name {
+  font-size: 14px;
+  font-weight: 700;
+}
+.track__info > .track-description {
+  font-size: 13px;
+  color: slategray;
 }
